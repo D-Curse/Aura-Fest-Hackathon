@@ -13,3 +13,9 @@ Features
 .Secure and Private: Your financial data is securely stored, and the application prioritizes user privacy. All data is stored locally on your device, and no sensitive information is sent or stored on external servers.
 
 WEBSITE : https://enigma001.pythonanywhere.com
+
+
+COLLABRATORS
+--> Dhruv Bhatada 
+--> Nimesh Gujari
+--> Yashvant Chhapwale
