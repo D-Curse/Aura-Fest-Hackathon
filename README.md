@@ -15,7 +15,7 @@ Features
 WEBSITE : https://enigma001.pythonanywhere.com
 
 
-COLLABRATORS
+COLLABORATORS
 
 --> Dhruv Bhatada 
 
