@@ -1,0 +1,12 @@
+{% extend base.html %}
+{% load static %}
+{% block content%}
+
+<head>
+</head>
+<body>
+    <h2>Expense Graph</h2>
+    <img src="data:image/png;base64,{{ plot_data }}" alt="Expense Graph">
+</body>
+
+{% endblock %}

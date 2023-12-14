@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Xpense{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'howitworks' %}" class="logo-href">
+            <div class="elements">How It Works</div>
+        </a>
+        <a href="{% url 'transaction_list' %}" class="logo-href">
+            <div class="elements">Tracker</div>
+        </a>
+        <a href="{% url 'home' %}" class="logo-href">
+            <div class="logo"><span class="l" style="color: #ffcc4d;">X</span>pense</div>
+        </a>
+        <a href="{% url 'add_transaction' %}" class="logo-href">
+            <div class="elements">Create</div>
+        </a>
+        <a href="{% url 'user_login' %}" class="logo-href">
+            <div class="lgin">LOG OUT</div>
+        </a>
+    </div>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>

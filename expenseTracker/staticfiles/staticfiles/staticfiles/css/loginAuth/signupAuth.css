@@ -1,0 +1,66 @@
+@font-face {
+    font-family: greycliff-medium;
+    src: url(./font/FONTSPRINGDEMO-GreycliffCFMediumRegular.woff);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle at 50% 50%, rgba(151, 203, 255, 1) 0%, rgba(219, 236, 253, 1) 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: greycliff-medium;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 50px;
+    width: 80%;
+    padding-block:30px ;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.error{
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+.inner-container{
+    border: 2px #89C0F6 solid ;
+    display: flex;
+    width: 60em;
+    height: 32em;
+    border-radius: 20px;
+    font-family: greycliff-medium;
+}
+.inner-container-signup{
+    width: 30em;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    padding-block: 20px;
+    text-align: center;
+    background-color: #fff;
+}

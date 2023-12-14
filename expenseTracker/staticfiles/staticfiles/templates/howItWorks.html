@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static "css/howitworks.css" %}">
+</head>
+<body>
+
+<div class="introduction-content">
+    <div class="left-content">
+        <div class="introduction-heading">What Is Xpense? How Does It Work?</div>
+        <div class="introduction">Xpense is a comprehensive app that meticulously assesses your budgets, expenses, and balances, providing you with a detailed financial report — all in one powerful application. </div>
+        <div class="login-button">
+            <button class="login">SignUp</button>
+        </div>
+        <div class="introduction-2">Login and get started. </div>
+    </div>
+    <div class="introduction-image">
+        <img src="{% static "img/introduction-image.png" %}" width="650px" height="450px" alt="">
+    </div>
+</div>
+  
+<div class="working-1">
+    <div class="working1-image">
+        <img src="{% static "img/working-1.png" %}" width="740px" height="450px" alt="">
+     </div>
+    <div class="right-content">
+      <div class="working1-heading">Smoothly track cash flow with ease</div>
+      <div class="working1-description">An expenditure monitoring solution is intricately designed to oversee recurring bills, transactions, invoices, and checks, ensuring adept handling of repetitive costs.</div>
+    </div>
+    </div>
+
+<div class="working-2">
+    <div class="left-content">
+    <div class="working2-heading">Dynamic Financial Visualization</div>
+   
+
+        <div class="working2-description">Aids in creation of detailed and interactive graphs and charts that visually represent complex financial data.</div>
+        <div class="login-button">
+            <button class="login">Start Tracking</button>
+        </div>
+    </div>
+    <div class="working2-image">
+        <img src="{% static "img/working-2.png" %}" width="800px" height="450px" alt="">
+    </div>
+</div>
+</div>
+</body>
+{% endblock %}

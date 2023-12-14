@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h2>Expense Tracker</h2>
+    <form method="post" action="{% url 'expense_form' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+{% endblock %}

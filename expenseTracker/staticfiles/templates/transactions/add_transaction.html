@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <head>
+    <link rel="stylesheet" href="{% static 'css/add_transaction.css' %}">
+  </head>
+  <h2>Add Transaction</h2>
+  <form method="post" action="{% url 'add_transaction' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+  </form>
+  <a href="{% url 'transaction_list' %}" class="a-btn">Back to Transaction List</a>
+{% endblock %}
